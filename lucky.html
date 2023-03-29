@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Generation DnD</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                <p1 id="luckyNumbers">Your lucky numbers are: </p1><br>
+                <p1>Use these in a lottery, or find something else to use them for!</p1><br>
+                <a href="./index.html" class="button">Home</a>
+                <a href="./lucky.html" class="button">Roll again</a>
+                <script>
+                    var luckyNumber
+                    for (var i = 0; i < 6; i++) {
+                        luckyNumber = Math.floor(Math.random() * 100);
+                        document.getElementById("luckyNumbers").innerHTML = document.getElementById("luckyNumbers").innerHTML + luckyNumber + " ";
+                    }
+                </script>
+            </div>
+        </div>
+    </body>
+</html>
