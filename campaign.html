@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Generation DnD: Character</title>
+        <title>Generation DnD: Campaign</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/genChar.js"></script>
+        <script src="js/genCampaign.js"></script>
     </head>
     <body>
         <div class="container">
-            <p1>You have rolled a:</p1><br>
-            <p1 id="character"></p1>
+            <p1>This is your custom campaign:</p1><br>
+            <p1 id="campaign"></p1>
             <br>
             <a href="index.html" class="button">Home</a>
-            <a href="character.html" class="button">Roll another!</a>
+            <a href="campaign.html" class="button">Roll another!</a>
         </div>
         <script>
-            let character = genChar();
-            document.getElementById("character").innerHTML = character;
+            let campaign = makeCampaign();
+            document.getElementById("campaign").innerHTML = campaign;
         </script>
     </body>
 </html>

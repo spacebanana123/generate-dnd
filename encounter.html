@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Generation DnD: Encounter</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/genEncounter.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <p1>Here's a random encounter:</p1><br>
+            <p1 id="randEncounter"></p1>
+            <br><br><br>
+            <p1>This is your easy encounter:</p1><br>
+            <p1 id="easyEncounter"></p1>
+            <br><br><br>
+            <p1>This is your medium encounter:</p1><br>
+            <p1 id="mediumEncounter"></p1>
+            <br><br><br>
+            <p1>This is your hard encounter:</p1><br>
+            <p1 id="hardEncounter"></p1>
+            <br><br><br>
+            <p1>This encounter isn't combat:</p1><br>
+            <p1 id="other"></p1>
+            <br>
+            <a href="index.html" class="button">Home</a>
+            <a href="encounter.html" class="button">Roll another!</a>
+        </div>
+        <script>
+            let randEncounter = randEnc();
+            let encounterList = genEnc();
+            let easyEncounter = encounterList[0];
+            let mediumEncounter = encounterList[1];
+            let hardEncounter = encounterList[2];
+            let other = encounterList[3];
+            console.log(randEncounter);
+            console.log(easyEncounter);
+            console.log(mediumEncounter);
+            console.log(hardEncounter);
+            console.log(other);
+            document.getElementById("randEncounter").innerHTML = randEncounter;
+            document.getElementById("easyEncounter").innerHTML = easyEncounter;
+            document.getElementById("mediumEncounter").innerHTML = mediumEncounter;
+            document.getElementById("hardEncounter").innerHTML = hardEncounter;
+            document.getElementById("other").innerHTML = other;
+        </script>
+    </body>
+</html>

@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Generation DnD: Character</title>
+        <title>Generation DnD: Trap</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/genChar.js"></script>
+        <script src="js/genTrap.js"></script>
     </head>
     <body>
         <div class="container">
-            <p1>You have rolled a:</p1><br>
-            <p1 id="character"></p1>
+            <p1>This is your custom trap:</p1><br>
+            <p1 id="trap"></p1>
             <br>
             <a href="index.html" class="button">Home</a>
-            <a href="character.html" class="button">Roll another!</a>
+            <a href="trap.html" class="button">Roll another!</a>
         </div>
         <script>
-            let character = genChar();
-            document.getElementById("character").innerHTML = character;
+            let trap = genTrap();
+            document.getElementById("trap").innerHTML = trap;
         </script>
     </body>
-</html>
