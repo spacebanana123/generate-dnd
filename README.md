@@ -1,4 +1,5 @@
 # generate-dnd
+Website that generates various random dnd related content
 A re-write of [generation dnd](https://github.com/spacebanana123/generationdnd), but:
   1. In local js so that the server servers static content.
   2. Better ui so that the site isn't black on white the whole time.
